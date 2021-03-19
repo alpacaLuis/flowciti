@@ -1,0 +1,28 @@
+.nav {
+  background-color: var(--white-color);
+  padding: 0rem 12rem;
+
+  height: 7rem;
+
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0rem 5rem;
+  }
+
+  &__logo {
+    width: 12%;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 20%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 30%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 34%;
+    }
+  }
+}

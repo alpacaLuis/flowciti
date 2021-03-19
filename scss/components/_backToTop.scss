@@ -1,0 +1,37 @@
+//Back to top button styling
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3.75rem;
+  height: 3.75rem;
+
+  background-color: rgba(var(--primary-color), 1);
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0.1rem 0.4rem var(--gray-dark);
+
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+
+  color: var(--primary-color);
+  text-decoration: none;
+
+  transition: all 0.4s ease;
+
+  display: none;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transform: rotateZ(45deg);
+  }
+}
+
+.btn:hover i {
+  transform: rotateZ(-45deg);
+}
